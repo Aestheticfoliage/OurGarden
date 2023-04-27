@@ -9,8 +9,48 @@
 <div class="Main Logo">
     <H1>Welcome To Our Garden</H1>
     <img src="assets\images\LogoR0001639.JPG"
-</div>
+    <!DOCTYPE html>
+<div>
+	<title>My Garden</title>
+
 <body>
-    
+	<h1>My Garden</h1>
+	<div id="gardener-info"></div>
+	<script>
+		// Define Gardener class and create a new gardener object
+		class Gardener {
+		  constructor(name, skillLevel, availableSpace, tools, isCommunityContributor) {
+		    this.name = name;
+		    this.skillLevel = skillLevel;
+		    this.availableSpace = availableSpace;
+		    this.tools = tools;
+		    this.isCommunityContributor = isCommunityContributor;
+		  }
+		}
+		const beginnerGardener = new Gardener('Jane', 'Beginner', 'Small', ['Trowel', 'Watering Can'], true);
+		
+		// Display gardener information in HTML
+		const gardenerInfo = document.getElementById('gardener-info');
+		const gardenerName = document.createElement('p');
+		gardenerName.textContent = `Gardener name: ${beginnerGardener.name}`;
+		const gardenerSkillLevel = document.createElement('p');
+		gardenerSkillLevel.textContent = `Skill level: ${beginnerGardener.skillLevel}`;
+		const gardenerAvailableSpace = document.createElement('p');
+		gardenerAvailableSpace.textContent = `Available space: ${beginnerGardener.availableSpace}`;
+		const gardenerTools = document.createElement('p');
+		gardenerTools.textContent = `Tools: ${beginnerGardener.tools.join(', ')}`;
+		const gardenerCommunity = document.createElement('p');
+		gardenerCommunity.textContent = `Community contributor: ${beginnerGardener.isCommunityContributor}`;
+		
+		gardenerInfo.appendChild(gardenerName);
+		gardenerInfo.appendChild(gardenerSkillLevel);
+		gardenerInfo.appendChild(gardenerAvailableSpace);
+		gardenerInfo.appendChild(gardenerTools);
+		gardenerInfo.appendChild(gardenerCommunity);
+	</script>
 </body>
+
+</div>
+    </div>
+</div>
 </html>
