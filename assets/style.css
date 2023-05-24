@@ -1,0 +1,19 @@
+:root {
+--thistle: #e9d2f4ff;
+--tea-green: #c9e3acff;
+--pistachio: #90be6dff;
+--butterscotch: #eea243ff;
+--hunter-green: #315c2bff;
+}
+*{
+    background-color: var(--pistachio);
+}
+
+#logo{
+    background-color: -- thistle;
+}
+
+#H1{
+    background-color: var(--tea-green);
+
+}
