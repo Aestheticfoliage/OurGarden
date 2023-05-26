@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Aestheticfoliage/OurGarden/issues"
   },
-  "homepage": "https://github.com/Aestheticfoliage/OurGarden#readme"
+  "homepage": "https://github.com/Aestheticfoliage/OurGarden#readme",
+  "dependencies": {
+    "leaflet": "^1.9.4"
+  }
 }
